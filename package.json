@@ -10,8 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@sasmeee/tkdl": "^1.0.3",
     "express": "^4.18.2",
     "get-twitter-media": "^2.0.8",
+    "snapsave-downloader2": "^6.9.5",
     "ytdl-core": "^4.11.5"
   }
 }
