@@ -124,6 +124,7 @@ app.post('/vidsight', async (req, res) => {
         audio : response.data.links.audio ?? [],
         video : response.data.links.video ?? [],
         other : response.data.links.other ?? [],
+        similar : []
       }
     }
 
