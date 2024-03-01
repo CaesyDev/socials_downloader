@@ -151,8 +151,8 @@ app.post('/ytsight', async (req, res) => {
 
   try {
     const remoteUrl = 'https://www.y2mate.com/mates/convertV2/index';
-    const vid_ID = req.query.vid;
-    const k_ID = req.query.k
+    const vid_ID = req.body.vid;
+    const k_ID = req.body.k
 
     const formData = {
       vid: vid_ID,
