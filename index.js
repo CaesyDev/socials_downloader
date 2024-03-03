@@ -202,9 +202,9 @@ app.get("/mine", async (req, res) => {
 
 
 
-app.get("/test", async (req, res) => {
+app.post("/weather", async (req, res) => {
   const apiUrl = "https://api.tomorrow.io/v4/weather/forecast";
-  const location = "nnewi";
+  const location = req.body.location;
   const apiKey = "pqXCB0DMgCsXZcTcYXCre572ne3VKpe0";
   const url = `${apiUrl}?location=${encodeURIComponent(
     location
@@ -216,10 +216,16 @@ app.get("/test", async (req, res) => {
   axios
     .get(url, { headers })
     .then((response) => {
-      res.send(response.data);
+      res.send({
+        status: "ok",
+        message: response.data
+      });
     })
     .catch((error) => {
-      res.send(error);
+      res.send({
+        status : "error",
+        message : error
+      });
     });
 });
 
