@@ -18,6 +18,7 @@
     "get-twitter-media": "^2.0.8",
     "nodemon": "^3.0.3",
     "snapsave-downloader2": "^6.9.5",
+    "youtube-search-api": "^1.2.1",
     "ytdl-core": "^4.11.5"
   }
 }
