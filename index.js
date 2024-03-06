@@ -226,3 +226,6 @@ function otherArrayKeys(resourceArray) {
   }
   
 }
+
+
+module.exports = app;
