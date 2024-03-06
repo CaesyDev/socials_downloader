@@ -12,6 +12,7 @@ const port = 3000;
 const apiRouter = require('./myApi');
 app.use(apiRouter);
 
+
 app.get('/', function (req, res) {
   res.send('Welcome');
 })
