@@ -8,6 +8,8 @@ const { nextAvaliable } = require("./utils");
 // 24 hours max timeout apis
 async function checkAvaliability() {
   const apikeys = await prisma.apikeys.findMany();
+  let apiStatus = false;
+  let apiResponse;
 
   for (let index = 0; index < apikeys.length; index++) {
     const element = apikeys[index];
@@ -18,7 +20,14 @@ async function checkAvaliability() {
       const now = new Date();
       if(element.avaliable){
 
+        //CASES FOR DIFFERENT FUNCTION CALLS
+        //1. YOUTUBE WORD SEARCH :   word-search-api2
+        //2. YOUTUBE VIDEO LINK : apiv2
+        //3. OTHER VIDEO PLATFORM LINK : apiv1
+
+
         //if successful, set return and success variable and break out of the loop.
+        apiStatus = true;
 
 
       }else if(now.getTime() > givenDate.getTime()){
@@ -48,6 +57,11 @@ async function checkAvaliability() {
   }
 
   //if loop ends without setting success variable, then return service busy 
+  if(apiStatus){
+    //success
+  }else{
+    //error
+  }
 
 }
 

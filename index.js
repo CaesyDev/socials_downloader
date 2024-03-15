@@ -1,6 +1,5 @@
 const express = require("express");
 const axios = require("axios");
-const youtubesearchapi = require("youtube-search-api");
 const dotenv = require("dotenv");
 dotenv.config();
 
@@ -225,42 +224,10 @@ app.post("/apiv2", async function (req, res) {
 
 
 
-app.post("/word-search", async (req, res) => {
-  try {
-    const search = req.body.search;
-    const result = await youtubesearchapi.GetListByKeyword(search, true, 12);
-    const data = result.items
-    let formattedData = [];
-    for (let index = 0; index < data.length; index++) {
-      const element = data[index];
-      let temp = {
-        videoIDentifier: element.id,
-        coverPic : element.thumbnail.thumbnails[1].url ?? element.thumbnail.thumbnails[0].url,
-        videoTitle : element.title,
-        channel : element.channelTitle,
-        length : element.length.simpleText
-      }
-      formattedData.push(temp);
-    }
-
-    res.send({
-      status : 200,
-      data : formattedData,
-      error : false
-    });
-
-  } catch (error) {
-    res.send({
-      status : 500,
-      error : true,
-      errMsg : error
-    });
-  }
-});
 
 
-
-
+//YOUTUBE SEARCH ALTERNATIVE : WILL REFRAIN FROM USING THIS OFTEN SINCE 
+//IT WILL BE MORE FOR GENERATING DOWNLOAD LINKS FOR YOUTUBE
 app.post('/word-search-api1/', async function(req, res){
   //RAPID API: YT-API -  $40 monthly API : 4,000,000 : 500 limit daily
   const search = req.body.search;
@@ -309,7 +276,7 @@ app.post('/word-search-api1/', async function(req, res){
 
 
 
-
+//USE THIS ONLY FOR YOUTUBE WORD SEARCH
 app.post('/word-search-api2/', async function(req, res){
   //RAPID API: Youtube Search and Download : $5 monthly API : 1,000,000 : 500 free limit daily
   const search = req.body.search;
@@ -366,17 +333,6 @@ app.post('/word-search-api2/', async function(req, res){
 
 
 
-
-app.post("/mine-yt-link", async (req, res) => {
-  
-    const videoId = req.body.ytid;
-    const media = await ytdl.getInfo(videoId, );
-    res.send({
-      formats : media.formats,
-      related_videos : media.related_videos,
-      videoDetails :media.videoDetails
-    });
-});
 
 
 

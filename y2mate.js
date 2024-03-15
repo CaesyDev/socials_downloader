@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express.Router();
+const youtubesearchapi = require("youtube-search-api");
 
 
 app.post("/vidsight", async (req, res) => {
@@ -126,3 +127,54 @@ app.post("/vidsight", async (req, res) => {
       res.status(500).send("Internal Server Error");
     }
   });
+
+
+
+
+
+  app.post("/word-search", async (req, res) => {
+    try {
+      const search = req.body.search;
+      const result = await youtubesearchapi.GetListByKeyword(search, true, 12);
+      const data = result.items
+      let formattedData = [];
+      for (let index = 0; index < data.length; index++) {
+        const element = data[index];
+        let temp = {
+          videoIDentifier: element.id,
+          coverPic : element.thumbnail.thumbnails[1].url ?? element.thumbnail.thumbnails[0].url,
+          videoTitle : element.title,
+          channel : element.channelTitle,
+          length : element.length.simpleText
+        }
+        formattedData.push(temp);
+      }
+  
+      res.send({
+        status : 200,
+        data : formattedData,
+        error : false
+      });
+  
+    } catch (error) {
+      res.send({
+        status : 500,
+        error : true,
+        errMsg : error
+      });
+    }
+  });
+
+
+
+
+  app.post("/mine-yt-link", async (req, res) => {
+  
+    const videoId = req.body.ytid;
+    const media = await ytdl.getInfo(videoId, );
+    res.send({
+      formats : media.formats,
+      related_videos : media.related_videos,
+      videoDetails :media.videoDetails
+    });
+});
