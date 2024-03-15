@@ -12,12 +12,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@prisma/client": "^5.11.0",
     "@sasmeee/tkdl": "^1.0.3",
     "axios": "^1.6.7",
+    "dotenv": "^16.4.5",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "get-twitter-media": "^2.0.8",
     "nodemon": "^3.0.3",
+    "prisma": "^5.11.0",
     "snapsave-downloader2": "^6.9.5",
     "youtube-search-api": "^1.2.1",
     "ytdl-core": "^4.11.5"

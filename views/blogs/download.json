@@ -1,0 +1,130 @@
+
+$40 : youtube download
+{
+    "itag": 18,
+    "url": "https://rr3---sn-4g5edndk.googlevideo.com/videoplayback?expire=1710031589&ei=ha7sZaXkFPuM6dsP-bKhwAg&ip=2a01%3A4f8%3Ac17%3A6b8e%3A852a%3Aff8c%3A8ae5%3Ae40b&id=o-AAtg-NVt5ZsjUquGVttvJb3qm5KYDQyhKb2o2DcCiNQJ&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=xy&mm=31%2C26&mn=sn-4g5edndk%2Csn-f5f7kn7z&ms=au%2Conr&mv=m&mvi=3&pl=43&initcwndbps=380000&spc=UWF9f1PXqQhEyJ-hBoFqWW-PPMRzd8L3LjemLy-0vj3e_ox4iA&vprv=1&svpuc=1&mime=video%2Fmp4&gir=yes&clen=250035198&ratebypass=yes&dur=3841.300&lmt=1709988213448353&mt=1710009686&fvip=4&fexp=24007246&c=ANDROID&txp=6309224&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRAIgawfNiaS_VKrnOV05u3hmEHuXgQV52G6i36RSyD3I9lICIEvqvEHjff6JuWbkVbmy5XXFnOrJmi6UxZ0Cn4JOMC1j&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=APTiJQcwRQIgFrI-Ve6a6AZTU_mox4FFsk6xYK8oeT_-FcNJsvRu4QoCIQDvo8XggEHR4N8mt4s895jisggR0NzQjThoMxBc4SoCjA%3D%3D",
+    "mimeType": "video/mp4; codecs=\"avc1.42001E, mp4a.40.2\"",
+    "bitrate": 520738,
+    "width": 640,
+    "height": 360,
+    "lastModified": "1709988213448353",
+    "contentLength": "250035198",
+    "quality": "medium",
+    "fps": 25,
+    "qualityLabel": "360p",
+    "projectionType": "RECTANGULAR",
+    "averageBitrate": 520730,
+    "audioQuality": "AUDIO_QUALITY_LOW",
+    "approxDurationMs": "3841300",
+    "audioSampleRate": "44100",
+    "audioChannels": 2
+},
+
+
+
+{
+    "itag": 137,
+    "url": "https://rr3---sn-4g5edndk.googlevideo.com/videoplayback?expire=1710031589&ei=ha7sZaXkFPuM6dsP-bKhwAg&ip=2a01%3A4f8%3Ac17%3A6b8e%3A852a%3Aff8c%3A8ae5%3Ae40b&id=o-AAtg-NVt5ZsjUquGVttvJb3qm5KYDQyhKb2o2DcCiNQJ&itag=137&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=xy&mm=31%2C26&mn=sn-4g5edndk%2Csn-f5f7kn7z&ms=au%2Conr&mv=m&mvi=3&pl=43&initcwndbps=380000&spc=UWF9f1PXqQhEyJ-hBoFqWW-PPMRzd8L3LjemLy-0vj3e_ox4iA&vprv=1&svpuc=1&mime=video%2Fmp4&gir=yes&clen=1779092047&dur=3841.240&lmt=1709988248582357&mt=1710009686&fvip=4&keepalive=yes&fexp=24007246&c=ANDROID&txp=6309224&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRgIhANJ0TNZRIdswg5Ynu8JeC5QTA0-LM0ZNlYAWd_ke6bRWAiEAg75chkRw_cT2aUokHHIBJTpdgQ8pjUXbAjp-wvv0KJY%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=APTiJQcwRQIgFrI-Ve6a6AZTU_mox4FFsk6xYK8oeT_-FcNJsvRu4QoCIQDvo8XggEHR4N8mt4s895jisggR0NzQjThoMxBc4SoCjA%3D%3D",
+    "mimeType": "video/mp4; codecs=\"avc1.640028\"",
+    "bitrate": 5807878,
+    "width": 1920,
+    "height": 1080,
+    "initRange": {
+        "start": "0",
+        "end": "741"
+    },
+    "indexRange": {
+        "start": "742",
+        "end": "8465"
+    },
+    "lastModified": "1709988248582357",
+    "contentLength": "1779092047",
+    "quality": "hd1080",
+    "fps": 25,
+    "qualityLabel": "1080p",
+    "projectionType": "RECTANGULAR",
+    "averageBitrate": 3705245,
+    "approxDurationMs": "3841240"
+},
+
+
+
+"video/mp4; codecs=\"avc1.640028\""
+"audio/webm; codecs=\"opus\""
+"audio/mp4; codecs=\"mp4a.40.5\""
+
+{
+    downloadLink : "",
+    quality : "",
+    size : ""
+}
+
+
+
+ALL MEDIA DOWNLOADER
+"medias": [
+    {
+        "url": "https://rr5---sn-npoeeney.googlevideo.com/videoplayback?expire=1710030939&ei=-6vsZdeOMfje4-EPhdO1iAM&ip=54.179.10.160&id=o-ALTCKv0-AjajxSxLnJ5o9ReIPAKW1H9p3f_WstA5l878&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=xy&mm=31%2C26&mn=sn-npoeeney%2Csn-30a7rner&ms=au%2Conr&mv=m&mvi=5&pl=17&initcwndbps=1528750&spc=UWF9f5JmZgYfrAG48pfnoKqZ9OgFrKysHKNAx7G6ghr8ibo&vprv=1&svpuc=1&mime=video%2Fmp4&ns=rsNL4pVBll7MVUW04kkZpJYQ&gir=yes&clen=250035198&ratebypass=yes&dur=3841.300&lmt=1709988213448353&mt=1710008955&fvip=4&fexp=24007246&c=WEB&sefc=1&txp=6309224&n=K5LP6L69GeoX1g&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=APTiJQcwRgIhAM6iC_zff6euuBinLh7YTkuQCLvF61ac60L_GBwc3exnAiEA8eZcFXezJuOT9GBp7kOBRYHcsqNy-rzbcTyrBNCwh8I%3D&sig=AJfQdSswRgIhAORrwAHT2B9_zrGEcI78rYDxj_Fdm1uxU4IHY7OFKgzcAiEA8Rnv9iLXmdduJDHqdYvz78LaIar-jwJTi3lFwFI3ifU%3D",
+        "quality": "360p",
+        "extension": "mp4",
+        "type": "video"
+    },
+    {
+        "url": "https://rr5---sn-npoeeney.googlevideo.com/videoplayback?expire=1710030939&ei=-6vsZdeOMfje4-EPhdO1iAM&ip=54.179.10.160&id=o-ALTCKv0-AjajxSxLnJ5o9ReIPAKW1H9p3f_WstA5l878&itag=22&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=xy&mm=31%2C26&mn=sn-npoeeney%2Csn-30a7rner&ms=au%2Conr&mv=m&mvi=5&pl=17&initcwndbps=1528750&spc=UWF9f5JmZgYfrAG48pfnoKqZ9OgFrKysHKNAx7G6ghr8ibo&vprv=1&svpuc=1&mime=video%2Fmp4&ns=rsNL4pVBll7MVUW04kkZpJYQ&cnr=14&ratebypass=yes&dur=3841.300&lmt=1709988325245823&mt=1710008955&fvip=4&fexp=24007246&c=WEB&sefc=1&txp=6308224&n=K5LP6L69GeoX1g&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Ccnr%2Cratebypass%2Cdur%2Clmt&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=APTiJQcwRgIhAKmjapAFjRluYtTOvUOGcnaV3BuRDB3M7IdYRPh-NCT0AiEAni9En-FUtAcS6W5LZWJqXn21ohRYm671Mq4Ba6SvZjI%3D&sig=AJfQdSswRQIgPelAkNct_6xORyLohnei-yeud_DNjQmqrzEswGHtSq0CIQCkxr0FYeFolHBMwnNGfCrU-WuJsjFGu8CnRkQ4_4vcmg%3D%3D",
+        "quality": "720p",
+        "extension": "mp4",
+        "type": "video"
+    },
+    {
+        "url": "https://rr5---sn-npoeeney.googlevideo.com/videoplayback?expire=1710030939&ei=-6vsZdeOMfje4-EPhdO1iAM&ip=54.179.10.160&id=o-ALTCKv0-AjajxSxLnJ5o9ReIPAKW1H9p3f_WstA5l878&itag=249&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=xy&mm=31%2C26&mn=sn-npoeeney%2Csn-30a7rner&ms=au%2Conr&mv=m&mvi=5&pl=17&initcwndbps=1528750&spc=UWF9f5JmZgYfrAG48pfnoKqZ9OgFrKysHKNAx7G6ghr8ibo&vprv=1&svpuc=1&mime=audio%2Fwebm&ns=5FuhevCgUwq4yWGElyc33esQ&gir=yes&clen=23678041&dur=3841.281&lmt=1709988404887839&mt=1710008955&fvip=4&keepalive=yes&fexp=24007246&c=WEB&sefc=1&txp=6308224&n=sLx_aOsTuEENmQ&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Cgir%2Cclen%2Cdur%2Clmt&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=APTiJQcwRQIhAJq4pYX5GyhPkj6s_OzXcKGkg3xNPPTlYZUnkAvnt0m3AiB46kgJujwtKldTeaBWIeDXpxVi8Mk-vD8IJwn8MjOLxg%3D%3D&sig=AJfQdSswRQIgZ-JsianOyEAuyzyu66FmQP9KuaEhZv9n3vNiK7KshPYCIQDfnHNd2qTv4M2WoHw7x1rrB3zRzkGoo_W9NhJ6jksRoA%3D%3D",
+        "quality": "Audio",
+        "extension": "mp3",
+        "type": "audio"
+    }
+]
+
+
+
+
+{
+    "type": "video",
+    "videoId": "0Gl2QnHNpkA",
+    "title": "Backstreet Boys - As Long As You Love Me (Official HD Video)",
+    "channelTitle": "Backstreet Boys",
+    "channelId": "UC1OR2YNQLZJYFdQjFrPWvVw",
+    "channelThumbnail": [
+        {
+            "url": "https://yt3.ggpht.com/znXSJ_ZyiPuAQgy7cLmcj_ck8sBj_dOKHFl-HbWlpJ-vfKgdE-rLI8GsdWcD0QseGND87qCI=s88-c-k-c0x00ffffff-no-rj",
+            "width": 68,
+            "height": 68
+        }
+    ],
+    "description": "Chorus: I don't care who you are Where you're from What you did As long as you love me Who you are Where you're from Don't ...",
+    "viewCount": "531207956",
+    "publishedTimeText": "12 years ago",
+    "publishDate": "2012-03-13",
+    "publishedAt": "2012-03-13T00:00:00Z",
+    "lengthText": "3:38",
+    "badges": [
+        "CC"
+    ],
+    "thumbnail": [
+        {
+            "url": "https://i.ytimg.com/vi/0Gl2QnHNpkA/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC84Xhb_KwRs3L2Xd1cw5NnhFk1xw",
+            "width": 360,
+            "height": 202
+        },
+        {
+            "url": "https://i.ytimg.com/vi/0Gl2QnHNpkA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBlDGAOXQqsHbxvk1DUyhqi4zZBAA",
+            "width": 720,
+            "height": 404
+        }
+    ],
+    "richThumbnail": [
+        {
+            "url": "https://i.ytimg.com/an_webp/0Gl2QnHNpkA/mqdefault_6s.webp?du=3000&sqp=CMDcxq8G&rs=AOn4CLDSTGAWNlMMuIxBqFRZ6u4bSziwgQ",
+            "width": 320,
+            "height": 180
+        }
+    ]
+},
