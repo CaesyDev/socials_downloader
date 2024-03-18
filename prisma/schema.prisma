@@ -20,13 +20,41 @@ model webvisit{
   agent String
   ipaddr String
   os String
+  dateTime String
 }
 
 
 
-model apikeys{
+model youtubewordsearch{
   id Int @id @default(autoincrement())
   key String
   avaliable Boolean
   nextAvaliable String
+}
+
+
+
+model allvideodownloader{
+  id Int @id @default(autoincrement())
+  key String
+  avaliable Boolean
+  nextAvaliable String
+}
+
+
+
+model youtubedownloader{
+  id Int @id @default(autoincrement())
+  key String
+  avaliable Boolean
+  nextAvaliable String
+}
+
+
+
+model apirequestcount{
+  id Int @id @default(autoincrement())
+  key String
+  type String
+  count Int
 }

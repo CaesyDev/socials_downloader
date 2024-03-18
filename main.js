@@ -2,67 +2,205 @@ const dotenv = require("dotenv");
 dotenv.config();
 const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
-const { nextAvaliable } = require("./utils");
 
+(async () => {
+  try {
+    const allVideoApiKeys = await prisma.allvideodownloader.findMany();
+    if (allVideoApiKeys.length == 0) {
 
-// 24 hours max timeout apis
-async function checkAvaliability() {
-  const apikeys = await prisma.apikeys.findMany();
-  let apiStatus = false;
-  let apiResponse;
+      await prisma.youtubewordsearch.createMany({
+        data: [
+          {
+            key: "660473502amsha3b31bbf2077b15p10a6b8jsn7626d7cff8e7",
+            avaliable: true,
+            nextAvaliable: "",
+          },
 
-  for (let index = 0; index < apikeys.length; index++) {
-    const element = apikeys[index];
+          {
+            key: "dcee779f9amsh99baadd6aba228dp12ae8ejsn286be95e6a0b",
+            avaliable: true,
+            nextAvaliable: "",
+          },
 
-    try {
-      //simulate api calls using this api key: break on success
-      const givenDate = new Date(element.nextAvaliable);
-      const now = new Date();
-      if(element.avaliable){
+          {
+            key: "20ed41ded8mshfd757c5fabf567ap116da5jsn6c1176927135",
+            avaliable: true,
+            nextAvaliable: "",
+          },
 
-        //CASES FOR DIFFERENT FUNCTION CALLS
-        //1. YOUTUBE WORD SEARCH :   word-search-api2
-        //2. YOUTUBE VIDEO LINK : apiv2
-        //3. OTHER VIDEO PLATFORM LINK : apiv1
+          {
+            key: "c5e94a91f4mshc0957267ed7d88cp16bd4cjsn838c2916da7f",
+            avaliable: true,
+            nextAvaliable: "",
+          },
 
+          {
+            key: "685ce38666msh2fef10d153b8e55p1c000djsnb1bbff17b1cf",
+            avaliable: true,
+            nextAvaliable: "",
+          },
 
-        //if successful, set return and success variable and break out of the loop.
-        apiStatus = true;
+          {
+            key: "e86b49f6fbmsh4438bcd0bc0665bp101d11jsn8d2254a46899",
+            avaliable: true,
+            nextAvaliable: "",
+          },
 
+          {
+            key: "83ed25539emsh61abeea759aab94p101c15jsn217ab73207c6",
+            avaliable: true,
+            nextAvaliable: "",
+          },
 
-      }else if(now.getTime() > givenDate.getTime()){
-        //check if date now exceeds nextAvaliableDate
-        await prisma.apikeys.update({
-            where: { key: element.key },
-            data: {
-              avaliable: true,
-            },
-          });
-      }else{
-        continue;
-      }
+          {
+            key: "5cd1fa3439msh5c3786f712fd9a4p14c60cjsn5d344958f7cd",
+            avaliable: true,
+            nextAvaliable: "",
+          },
 
-    } catch (error) {
-      //turn off avaliability for the api key
-      const element = apikeys[index];
-      const apiKey = element.key;
-      await prisma.apikeys.update({
-        where: { key: apiKey },
-        data: {
-          avaliable: false,
-          nextAvaliable: nextAvaliable(),
-        },
+          {
+            key: "2ef0429f59msh6a50049c6edb236p1085fbjsnf9ec19019df9",
+            avaliable: true,
+            nextAvaliable: "",
+          },
+
+          {
+            key: "dd6a371c0dmsh308bd595243d808p1d0bfdjsn8b1200565d56",
+            avaliable: true,
+            nextAvaliable: "",
+          },
+        ],
+      });
+
+      await prisma.allvideodownloader.createMany({
+        data: [
+          {
+            key: "660473502amsha3b31bbf2077b15p10a6b8jsn7626d7cff8e7",
+            avaliable: false,
+            nextAvaliable: "",
+          },
+
+          {
+            key: "dcee779f9amsh99baadd6aba228dp12ae8ejsn286be95e6a0b",
+            avaliable: true,
+            nextAvaliable: "",
+          },
+
+          {
+            key: "20ed41ded8mshfd757c5fabf567ap116da5jsn6c1176927135",
+            avaliable: true,
+            nextAvaliable: "",
+          },
+
+          {
+            key: "c5e94a91f4mshc0957267ed7d88cp16bd4cjsn838c2916da7f",
+            avaliable: true,
+            nextAvaliable: "",
+          },
+
+          {
+            key: "685ce38666msh2fef10d153b8e55p1c000djsnb1bbff17b1cf",
+            avaliable: true,
+            nextAvaliable: "",
+          },
+
+          {
+            key: "e86b49f6fbmsh4438bcd0bc0665bp101d11jsn8d2254a46899",
+            avaliable: true,
+            nextAvaliable: "",
+          },
+
+          {
+            key: "83ed25539emsh61abeea759aab94p101c15jsn217ab73207c6",
+            avaliable: true,
+            nextAvaliable: "",
+          },
+
+          {
+            key: "5cd1fa3439msh5c3786f712fd9a4p14c60cjsn5d344958f7cd",
+            avaliable: true,
+            nextAvaliable: "",
+          },
+
+          {
+            key: "2ef0429f59msh6a50049c6edb236p1085fbjsnf9ec19019df9",
+            avaliable: true,
+            nextAvaliable: "",
+          },
+
+          {
+            key: "dd6a371c0dmsh308bd595243d808p1d0bfdjsn8b1200565d56",
+            avaliable: true,
+            nextAvaliable: "",
+          },
+        ],
+      });
+
+      await prisma.youtubedownloader.createMany({
+        data: [
+          {
+            key: "660473502amsha3b31bbf2077b15p10a6b8jsn7626d7cff8e7",
+            avaliable: true,
+            nextAvaliable: "",
+          },
+
+          {
+            key: "dcee779f9amsh99baadd6aba228dp12ae8ejsn286be95e6a0b",
+            avaliable: true,
+            nextAvaliable: "",
+          },
+
+          {
+            key: "20ed41ded8mshfd757c5fabf567ap116da5jsn6c1176927135",
+            avaliable: true,
+            nextAvaliable: "",
+          },
+
+          {
+            key: "c5e94a91f4mshc0957267ed7d88cp16bd4cjsn838c2916da7f",
+            avaliable: true,
+            nextAvaliable: "",
+          },
+
+          {
+            key: "685ce38666msh2fef10d153b8e55p1c000djsnb1bbff17b1cf",
+            avaliable: true,
+            nextAvaliable: "",
+          },
+
+          {
+            key: "e86b49f6fbmsh4438bcd0bc0665bp101d11jsn8d2254a46899",
+            avaliable: true,
+            nextAvaliable: "",
+          },
+
+          {
+            key: "83ed25539emsh61abeea759aab94p101c15jsn217ab73207c6",
+            avaliable: true,
+            nextAvaliable: "",
+          },
+
+          {
+            key: "5cd1fa3439msh5c3786f712fd9a4p14c60cjsn5d344958f7cd",
+            avaliable: true,
+            nextAvaliable: "",
+          },
+
+          {
+            key: "2ef0429f59msh6a50049c6edb236p1085fbjsnf9ec19019df9",
+            avaliable: true,
+            nextAvaliable: "",
+          },
+
+          {
+            key: "dd6a371c0dmsh308bd595243d808p1d0bfdjsn8b1200565d56",
+            avaliable: true,
+            nextAvaliable: "",
+          },
+        ],
       });
     }
+  } catch (error) {
+    console.log(error);
   }
-
-  //if loop ends without setting success variable, then return service busy 
-  if(apiStatus){
-    //success
-  }else{
-    //error
-  }
-
-}
-
-checkAvaliability();
+})();
